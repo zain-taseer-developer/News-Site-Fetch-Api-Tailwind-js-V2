@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="max-w-full bg-[white] sticky top-0 z-10">
+      <div
+        class="max-w-[1280px] grid grid-cols-2 md:grid-cols-[40%_40%_20%] mx-auto"
+      >
+        <div class="">
+          <a href="" class="inline-block w-[13rem]">
+            <img
+              src="./assets/images/tailwind logo.png"
+              alt=""
+              class="w-[10rem] h-81px"
+            />
+          </a>
+        </div>
+        <div class="md:hidden flex justify-end" id="hamburg">
+          <img
+            src="./assets/images/hamburger-removebg-preview.png"
+            alt=""
+            class="w--[50px] h-20"
+          />
+        </div>
+        <div
+          class="flex top-[70px] right-5 absolute md:static items-center justify-center"
+        >
+          <ul
+            class="md:flex md:flex-row md:gap-2 lg:gap-8 bg-white p-5 hidden"
+            id="menuList"
+          >
+            <li
+              class="font-semibold text-sm border-t-[1px] border-solid border-black outline-0 md:border-t-0 pt-1 pb-1 md:pt-0 md:pb-0"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="font-semibold text-sm border-t-[1px] border-solid border-black outline-0 md:border-t-0 pt-1 pb-1 md:pt-0 md:pb-0"
+            >
+              <a
+                href="https://chatgpt.com/c/6746f069-78e4-8004-b093-2ab4c5314dda"
+                >About</a
+              >
+            </li>
+            <li
+              class="font-semibold text-sm border-t-[1px] border-solid border-black outline-0 md:border-t-0 pt-1 pb-1 md:pt-0 md:pb-0"
+            >
+              <a href="#">Services</a>
+            </li>
+            <li
+              class="font-semibold text-sm border-t-[1px] border-solid border-black outline-0 md:border-t-0 pt-1 pb-1 md:pt-0 md:pb-0"
+            >
+              <a href="#">Carriers</a>
+            </li>
+            <li
+              class="font-semibold text-sm border-t-[1px] border-solid border-black outline-0 md:border-t-0 pt-1 pb-1 md:pt-0 md:pb-0"
+            >
+              <a href="#">Contact</a> Us
+            </li>
+          </ul>
+
+          <ul
+            class="flex flex-col md:gap-2 lg:gap-8 bg-white p-5 md:hidden"
+            id="menuListMob"
+          >
+            <li
+              class="font-semibold text-sm border-t-[1px] border-solid border-black outline-0 md:border-t-0 pt-1 pb-1 md:pt-0 md:pb-0"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="font-semibold text-sm border-t-[1px] border-solid border-black outline-0 md:border-t-0 pt-1 pb-1 md:pt-0 md:pb-0"
+            >
+              <a
+                href="https://chatgpt.com/c/6746f069-78e4-8004-b093-2ab4c5314dda"
+                >About</a
+              >
+            </li>
+            <li
+              class="font-semibold text-sm border-t-[1px] border-solid border-black outline-0 md:border-t-0 pt-1 pb-1 md:pt-0 md:pb-0"
+            >
+              <a href="#">Services</a>
+            </li>
+            <li
+              class="font-semibold text-sm border-t-[1px] border-solid border-black outline-0 md:border-t-0 pt-1 pb-1 md:pt-0 md:pb-0"
+            >
+              <a href="#">Carriers</a>
+            </li>
+            <li
+              class="font-semibold text-sm border-t-[1px] border-solid border-black outline-0 md:border-t-0 pt-1 pb-1 md:pt-0 md:pb-0"
+            >
+              <a href="#">Contact</a> Us
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="hidden md:flex flex-row items-center justify-center relative"
+        >
+          <input
+            type="text"
+            class="ml-2 text-xs p-[4px] w-[100%]"
+            style="border: 1px solid rgb(141, 141, 141)"
+            placeholder="Type Here..."
+          />
+          <img
+            src="./assets/images/searchicon.png"
+            alt=""
+            class="w-7 h-7 absolute md:left-[7.5rem] lg:left-[13rem]"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- banner -->
+      <div
+        class="max-w-full bg-[url(/src/assets/images/pexels-justin-hamilton-16109-92248.jpg)] bg-center bg-cover h-[87vh] flex justify-center items-center bg-blend-overlay bg-[#00000091]"
+      >
+        <h1 class="text-white text-5xl font-extrabold animate-aniiiimation">
+          Ainsi Spice . Sean Bas <br />La Vida
+        </h1>
+      </div>
+      <!-- popular news -->
+      <h1 class="text-center text-4xl font-bold my-6">Popular News</h1>
+      <div
+        class="container mx-auto flex flex-col md:flex-row md:flex-wrap gap-3"
+        style="padding-left: 20px"
+        id="postHere"
+      ></div>
+
+      <!-- side by side intro -->
+      <div class="bg-[#f6f7f9] p-16 mt-10">
+        <div class="grid md:grid-cols-2 container mx-auto justify-items-center">
+          <div>
+            <img
+              src="./assets/images/news-presenter-avatar-character-J36M9X-removebg-preview.png"
+              alt=""
+              class="w-[100%] h-[100%] extraSmall:w-[430px] extraSmall:h-[430px]"
+            />
+          </div>
+          <div class="ml-1 mt-7">
+            <h1 class="text-[22px] font-semibold leading-10">
+              How We Provide Daily News To You
+            </h1>
+            <ul class="">
+              <li class="list-decimal list-inside text-md mb-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Hic, expedita voluptates cupiditate sequi cumque temporibus
+                illum. Qui!sasasasasasasaaaaaaaaa
+              </li>
+              <li class="list-decimal list-inside text-md mb-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Hic, expedita voluptates cupiditate sequi cumque temporibus
+                illum. Qui!sasasasasasasaaaaaaaaa
+              </li>
+              <li class="list-decimal list-inside text-md mb-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Hic, expedita voluptates cupiditate sequi cumque temporibus
+                illum. Qui!sasasasasasasaaaaaaaaa
+              </li>
+              <li class="list-decimal list-inside text-md mb-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Hic, expedita voluptates cupiditate sequi cumque temporibus
+                illum. Qui!sasasasasasasaaaaaaaaa
+              </li>
+              <li class="list-decimal list-inside text-md mb-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Hic, expedita voluptates cupiditate sequi cumque temporibus
+                illum. Qui!sasasasasasasaaaaaaaaa
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <div class="max-w-full bg-black pt-16 pb-14">
+      <div
+        class="container grid grid-cols-1 md:grid-cols-4 text-white mx-auto justify-items-center"
+      >
+        <div>
+          <h1 class="text-2xl">Our Branches</h1>
+          <ul class="pt-3 pl-2">
+            <li>lorem lorem</li>
+            <li>lorem 3</li>
+            <li>lorem 4</li>
+            <li>lorem 6</li>
+            <li>lorem 00</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-2xl">News Category</h1>
+          <ul class="pt-3 pl-2">
+            <li>lorem lorem</li>
+            <li>lorem 3</li>
+            <li>lorem 4</li>
+            <li>lorem 6</li>
+            <li>lorem 00</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-2xl">Quick Links</h1>
+          <ul class="pt-3 pl-2">
+            <li>lorem lorem</li>
+            <li>lorem 3</li>
+            <li>lorem 4</li>
+            <li>lorem 6</li>
+            <li>lorem 00</li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="./assets/images/logo_tailwind_white-removebg-preview.png"
+            alt=""
+            class="mt-[-24px]"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer bar -->
+    <div class="max-w-full bg-black">
+      <p
+        class="text-white text-center pt-4 pb-4 border-t-[1px] border-[#F2F3F4] border-solid"
+      >
+        Copyright @ news pakistan , Right reservedw
+      </p>
+    </div>
+  </body>
+
+  <script>
+    let dataFetch = fetch(
+      " https://newsdata.io/api/1/latest?apikey=pub_60073ee6e521030e4ef302cc79a485ea8ab84"
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        // let wawa = (newsTitle.innerHTML = data.results[0].title);
+        data.results.forEach((element, index) => {
+          // console.log(element);
+          let newdata = `
+          <div class="basis-[32%] bg-slate-300 p-8 shadow-lg relative">
+          <h1
+            class="bg-slate-600 text-white w-32 text-center p-1 absolute top-2 right-0"
+          >
+            News (${index + 1})
+          </h1>
+          <h1 class="text-green-500 mt-5">
+           ${element.title}
+          </h1>
+          <p>
+            ${element.description}
+          </p>
+          </div>`;
+          let parentElementForData = document.querySelector("#postHere");
+          parentElementForData.innerHTML += newdata;
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        console.log("finally fetch completee");
+      });
+
+    let menuListMobHandle = document.querySelector("#menuListMob");
+    menuListMobHandle.style.display = "none";
+    document.querySelector("#hamburg").addEventListener("click", () => {
+      if (menuListMobHandle.style.display === "none") {
+        menuListMobHandle.style.display = "flex";
+      } else {
+        menuListMobHandle.style.display = "none";
+      }
+    });
+  </script>
+</html>
